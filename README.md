@@ -1,4 +1,4 @@
-### Understanding Typescript Udemy Course
+# Understanding Typescript Udemy Course
 This is a course written by Maximilian Schwarzmüller that I am completing in order to learn TypeScript.  The full course is available for purchase [here](https://www.udemy.com/courses/search/?src=ukw&q=understanding+typescript).  This repo only represents my completed sections of the course work therefore does not include any of the learning modules or files as they are originally presented prior to completion.
 
 ## Module Progress
