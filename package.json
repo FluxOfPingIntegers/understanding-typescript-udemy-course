@@ -1,0 +1,23 @@
+{
+  "name": "understanding-typscript-udemy-course",
+  "version": "1.0.0",
+  "description": "This is a course written by Maximilian Schwarzmüller that I am completing in order to learn TypeScript.  The full course is available for purchase [here](https://www.udemy.com/courses/search/?src=ukw&q=understanding+typescript).  This repo only represents my completed sections of the course work therefore does not include any of the learning modules or files as they are originally presented prior to completion.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluxOfPingIntegers/understanding-typescript-udemy-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluxOfPingIntegers/understanding-typescript-udemy-course/issues"
+  },
+  "homepage": "https://github.com/FluxOfPingIntegers/understanding-typescript-udemy-course#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
