@@ -6,6 +6,13 @@ function printResult(num: number): void {
   console.log('Result: ' + num)
 }
 
-console.log(printResult(add(5, 12)));
+printResult(add(5, 12));
+
+let combineValues: (a: number, b: number) => number; //function type that accepts 2 params that are numbers
+
+combineValues = add;
+// combineValues = printResult;
+
+console.log(combineValues(8, 8));
 
 // let someValue: undefined;
