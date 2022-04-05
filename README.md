@@ -3,7 +3,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 
 ## Module Progress
 - [x] Getting Started
-- [ ] TypeScript Basics & Basic Types
+- [x] TypeScript Basics & Basic Types
 - [ ] The TypeScript Compiler (and its Configuration)
 - [ ] Next-generation JavaScript & TypeScript
 - [ ] Classes & Interfaces
