@@ -99,12 +99,8 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-    "./first-project/using-ts.ts",
-    "./previous-lessons/basics.ts",
-    "./previous-lessons/functions.ts",
-    "./previous-lessons/obj-arrays-enum.ts",
-    "./previous-lessons/union-aliases.ts",
-    "./previous-lessons/unknown-and-never-types.ts",
+  //  "./first-project/using-ts.ts",
+    "./previous-lessons/*", // * is the wild card, any file/folder in the previous-lessons folder is excluded
     "node_modules" // is excluded by default
   ],
   // "include": []  // is used to include files and folders to be compiled. is set to everything
