@@ -1,8 +1,8 @@
-const userName = 'Max';
+// const userName = 'Max';
 // username = 'Maximilian; // not allowed
-let age = 30;
-
-age = 29;
+// let age = 30;
+// 
+// age = 29;
 
 // function add(a: number, b: number) {
 //     let result;
@@ -36,7 +36,7 @@ const activeHobbies = ['Hiking'];
 activeHobbies.push(...hobbies);
 
 const person ={
-  name: 'Max',
+  firstName: 'Max',
   age: 30,
 };
 
@@ -50,3 +50,11 @@ const add = (...numbers: number[]) => {
 
 const addNumbers = add(5, 10, 2);
 console.log(addNumbers);
+
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+
+console.log(hobbies, hobby1, hobby2);
+
+const { firstName: userName, age } = person;
+
+console.log(userName, age, person);

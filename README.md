@@ -5,7 +5,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Getting Started
 - [x] TypeScript Basics & Basic Types
 - [x] The TypeScript Compiler (and its Configuration)
-- [ ] Next-generation JavaScript & TypeScript
+- [x] Next-generation JavaScript & TypeScript
 - [ ] Classes & Interfaces
 - [ ] Advanced Types
 - [ ] Generics
