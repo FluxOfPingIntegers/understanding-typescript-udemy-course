@@ -39,7 +39,14 @@ class AccountingDepartment extends Department {
     if (this.lastReport) {
       return this.lastReport;
     }
-    throw new Error('NO report found.')
+    throw new Error('No report found.');
+  }
+
+  set mostRecentReport(value: string) {
+    if (!value) {
+      throw new Error('Please pass in a valid value!')
+    }
+    this.addReport(value);
   }
 
 
@@ -80,7 +87,9 @@ console.log(it);
 
 const accounting = new AccountingDepartment('d2', []);
 
+accounting.mostRecentReport = 'Year End Report';
 accounting.addReport('Something went wrong...');
+console.log(accounting.mostRecentReport);
 
 accounting.addEmployee('Max');
 accounting.addEmployee('Manu');
