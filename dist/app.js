@@ -26,6 +26,13 @@ class AccountingDepartment extends Department {
     constructor(id, reports) {
         super(id, 'Accounting');
         this.reports = reports;
+        this.lastReport = reports[0];
+    }
+    get mostRecentReport() {
+        if (this.lastReport) {
+            return this.lastReport;
+        }
+        throw new Error('NO report found.');
     }
     addEmployee(name) {
         if (name === 'Max') {
@@ -35,6 +42,7 @@ class AccountingDepartment extends Department {
     }
     addReport(text) {
         this.reports.push(text);
+        this.lastReport = text;
     }
     printReports() {
         console.log(this.reports);
