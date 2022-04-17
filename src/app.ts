@@ -105,8 +105,10 @@ console.log(accounting.mostRecentReport);
 accounting.addEmployee('Max');
 accounting.addEmployee('Manu');
 
-accounting.printReports();
-accounting.printEmployeeInformation();
+// accounting.printReports();
+// accounting.printEmployeeInformation();
+
+accounting.describe();
 
 // const itCopy = { name: 'DUMMY', describe: it.describe };
 // 
