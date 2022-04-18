@@ -86,4 +86,4 @@ console.log(accounting.mostRecentReport);
 accounting.addEmployee('Max');
 accounting.addEmployee('Manu');
 accounting.describe();
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=classes.js.map
