@@ -1,0 +1,1 @@
+const names: Array<string> = []; // string[] , is a generic type (type connected to other type)
