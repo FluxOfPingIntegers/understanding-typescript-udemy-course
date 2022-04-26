@@ -48,7 +48,7 @@ class DataStorage<T extends string | number | boolean> {
   }
 
   removeItem(item: T) {
-    if (this.data.indexOf(item) ) {
+    if (this.data.indexOf(item) === -1) {
       return;
     }
     this.data.splice(this.data.indexOf(item), 1); // -1 if can't find anything
@@ -74,3 +74,25 @@ const numberStorage = new DataStorage<number>();
 // // ...
 // objStorage.removeItem(maxObj);
 // console.log(objStorage.getItems());
+
+interface CourseGoal {
+  title: string;
+  description: string;
+  completeUntil: Date;
+}
+
+function createCourseGoal(
+  title: string,
+   description: string,
+    date: Date
+    ): CourseGoal {
+  let courseGoal: Partial<CourseGoal> = {}; // Partial makes all properties optional
+  courseGoal.title = title;
+  courseGoal.description = description;
+  courseGoal.completeUntil = date;
+  return courseGoal as CourseGoal; // types courseGoal as CourseGoal for return
+}
+
+const names: Readonly<string[]> = ['Max', 'Anna']; // makes typescript yell at me when I try to push/pop.
+// names.push('Manu');
+// names.pop();
