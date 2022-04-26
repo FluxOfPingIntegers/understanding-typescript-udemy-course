@@ -8,7 +8,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Next-generation JavaScript & TypeScript
 - [x] Classes & Interfaces
 - [x] Advanced Types
-- [ ] Generics
+- [x] Generics
 - [ ] Decorators
 - [ ] Practice Time! Let's build a Drag & Drop Project
 - [ ] Modules & Namespaces
