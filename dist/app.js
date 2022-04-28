@@ -17,14 +17,18 @@ function Logger(logString) {
 }
 function WithTemplate(template, hookId) {
     console.log('TEMPLATE FACTORY');
-    return function (constructor) {
-        console.log('Rendering template');
-        const p = new constructor();
-        const hookEl = document.getElementById(hookId);
-        if (hookEl) {
-            hookEl.innerHTML = template;
-            hookEl.querySelector('h1').textContent = p.name;
-        }
+    return function (originalConstructor) {
+        return class extends originalConstructor {
+            constructor(..._) {
+                super();
+                console.log('Rendering template');
+                const hookEl = document.getElementById(hookId);
+                if (hookEl) {
+                    hookEl.innerHTML = template;
+                    hookEl.querySelector('h1').textContent = this.name;
+                }
+            }
+        };
     };
 }
 let Person = class Person {
@@ -37,8 +41,6 @@ Person = __decorate([
     Logger('LOGGING'),
     WithTemplate('<h1>My Person Object</h1>', 'app')
 ], Person);
-const pers = new Person();
-console.log(pers);
 function Log(target, propertyName) {
     console.log('Property decorator!');
     console.log(target, propertyName);
@@ -88,4 +90,6 @@ __decorate([
     Log3,
     __param(0, Log4)
 ], Product.prototype, "getPriceWithTax", null);
+const p1 = new Product('Book', 19);
+const p2 = new Product('Book 2', 29);
 //# sourceMappingURL=app.js.map
