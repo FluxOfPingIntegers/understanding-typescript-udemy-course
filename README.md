@@ -9,7 +9,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Classes & Interfaces
 - [x] Advanced Types
 - [x] Generics
-- [ ] Decorators
+- [x] Decorators
 - [ ] Practice Time! Let's build a Drag & Drop Project
 - [ ] Modules & Namespaces
 - [ ] Using Webpack with Typescript
