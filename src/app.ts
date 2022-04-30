@@ -3,9 +3,9 @@ class ProjectInput {
   hostElement: HTMLDivElement;
   element: HTMLFormElement;
 
-  constructor() {
-    this.templateElement = document.getElementById('project-input')! as HTMLTemplateElement;
-    this.hostElement = document.getElementById('app')! as HTMLDivElement;
+  constructor(args: {temp: string, host: string}, temp = args.temp, host = args.host) {
+    this.templateElement = document.getElementById(temp)! as HTMLTemplateElement;
+    this.hostElement = document.getElementById(host)! as HTMLDivElement;
 
     const importedNode = document.importNode(this.templateElement.content, true);
     this.element = importedNode.firstElementChild as HTMLFormElement;
@@ -17,4 +17,4 @@ class ProjectInput {
   }
 }
 
-const prjInput = new ProjectInput();
+const prjInput = new ProjectInput({temp: 'project-input', host: 'app'});

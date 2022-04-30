@@ -1,8 +1,8 @@
 "use strict";
 class ProjectInput {
-    constructor() {
-        this.templateElement = document.getElementById('project-input');
-        this.hostElement = document.getElementById('app');
+    constructor(args, temp = args.temp, host = args.host) {
+        this.templateElement = document.getElementById(temp);
+        this.hostElement = document.getElementById(host);
         const importedNode = document.importNode(this.templateElement.content, true);
         this.element = importedNode.firstElementChild;
         this.attach();
@@ -11,5 +11,5 @@ class ProjectInput {
         this.hostElement.insertAdjacentElement('afterbegin', this.element);
     }
 }
-const prjInput = new ProjectInput();
+const prjInput = new ProjectInput({ temp: 'project-input', host: 'app' });
 //# sourceMappingURL=app.js.map
