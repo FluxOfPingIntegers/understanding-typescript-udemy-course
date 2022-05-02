@@ -44,21 +44,34 @@ class ProjectInput {
     this.attach();
   }
 
+  private validateUserInput(inputArr: (string | number)[]): boolean {
+    let correct = true;
+    for (let val in inputArr) {
+      correct = (correct && val.trim().length === 0)
+    }
+    return correct
+  }
+
   private gatherUserInput(): [string, string, number] | void {
     const enteredTitle = this.titleInputElement.value;
     const enteredDescription = this.descriptionInputElement.value;
     const enteredPeople = this.peopleInputElement.value;
 
-    if (
-      enteredTitle.trim().length === 0 ||
-      enteredDescription.trim().length === 0 ||
-      enteredPeople.trim().length === 0
-    ) {
-      alert('Invalid input, please try again!');
-      return;
-    } else {
+    if (this.validateUserInput([enteredTitle, enteredDescription, +enteredPeople])) {
       return [enteredTitle, enteredDescription, +enteredPeople];
+    } else {
+      alert('Invalid input, please try again!');
     }
+    // if (
+    //   enteredTitle.trim().length === 0 ||
+    //   enteredDescription.trim().length === 0 ||
+    //   enteredPeople.trim().length === 0
+    // ) {
+    //   alert('Invalid input, please try again!');
+    //   return;
+    // } else {
+    //   return [enteredTitle, enteredDescription, +enteredPeople];
+    // }
   }
 
   private clearInputs() {
