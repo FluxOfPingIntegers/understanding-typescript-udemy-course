@@ -11,12 +11,13 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        use: 'ts-lodar',
+        use: 'ts-loader',
         exclude: /node_modules/
       }
     ]
   },
   resolve: {
-    extentions: ['.ts', '.js']
-  }
+    extensions: ['.ts', '.js']
+  },
+  mode: 'development'
 };
