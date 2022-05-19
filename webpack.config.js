@@ -23,6 +23,7 @@ module.exports = {
     ]
   },
   devServer: {
+    open: true,
     static:  {
       directory: path.resolve( __dirname, './' ),
     },
