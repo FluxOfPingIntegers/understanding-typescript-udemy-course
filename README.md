@@ -10,11 +10,11 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Advanced Types
 - [x] Generics
 - [x] Decorators
-- [ ] Practice Time! Let's build a Drag & Drop Project
-- [ ] Modules & Namespaces
-- [ ] Using Webpack with Typescript
-- [ ] 3rd Party Libraries & TypeScript
-- [ ] Time to Practice! Let's build a "Select & Share a Place" App
-- [ ] React.js & TypeScript
+- [x] Practice Time! Let's build a Drag & Drop Project
+- [x] Modules & Namespaces
+- [x] Using Webpack with Typescript
+- [x] 3rd Party Libraries & TypeScript
+- [x] Time to Practice! Let's build a "Select & Share a Place" App
+- [x] React.js & TypeScript
 - [ ] Node.js + Express & TypeScript
 - [ ] Course  Roundup

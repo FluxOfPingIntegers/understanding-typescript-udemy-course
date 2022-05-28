@@ -1,0 +1,41 @@
+{
+  "name": "understanding-typscript-udemy-course",
+  "version": "1.0.0",
+  "description": "This is a course written by Maximilian Schwarzmüller that I am completing in order to learn TypeScript.  The full course is available for purchase [here](https://www.udemy.com/courses/search/?src=ukw&q=understanding+typescript).  This repo only represents my completed sections of the course work therefore does not include any of the learning modules or files as they are originally presented prior to completion.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.13.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "dotenv-webpack": "^7.1.0",
+    "es6-shim": "^0.35.6",
+    "express": "^4.18.1",
+    "html-webpack-plugin": "^5.5.0",
+    "lite-server": "^2.6.1",
+    "lodash": "^4.17.21",
+    "reflect-metadata": "^0.1.13",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluxOfPingIntegers/understanding-typescript-udemy-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluxOfPingIntegers/understanding-typescript-udemy-course/issues"
+  },
+  "homepage": "https://github.com/FluxOfPingIntegers/understanding-typescript-udemy-course#readme"
+}
