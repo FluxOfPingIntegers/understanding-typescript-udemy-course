@@ -16,5 +16,5 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] 3rd Party Libraries & TypeScript
 - [x] Time to Practice! Let's build a "Select & Share a Place" App
 - [x] React.js & TypeScript
-- [ ] Node.js + Express & TypeScript
+- [x] Node.js + Express & TypeScript
 - [ ] Course  Roundup
