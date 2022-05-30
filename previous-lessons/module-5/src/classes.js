@@ -3,12 +3,18 @@ class Department {
     constructor(id, name) {
         this.id = id;
         this.name = name;
+        // private id: string;
+        // private name: string;
         this.employees = [];
+        // this.id = id;
+        // this.name = n;
     }
     static createEmployee(name) {
         return { name: name };
     }
     addEmployee(employee) {
+        // validation etc
+        // this.id = 'd2'
         this.employees.push(employee);
     }
     printEmployeeInformation() {
@@ -73,10 +79,12 @@ console.log(employee1, Department.fiscalYear);
 const it = new ITDepartment('d1', ['MAX']);
 it.addEmployee('Max');
 it.addEmployee('Manu');
+// it.employees[2] = 'Anna';
 it.describe();
 it.name = 'NEW NAME';
 it.printEmployeeInformation();
 console.log(it);
+//const accounting = new AccountingDepartment('d2', []);
 const accounting = AccountingDepartment.getInstance();
 const accounting2 = AccountingDepartment.getInstance();
 console.log(accounting, accounting2);
@@ -85,5 +93,9 @@ accounting.addReport('Something went wrong...');
 console.log(accounting.mostRecentReport);
 accounting.addEmployee('Max');
 accounting.addEmployee('Manu');
+// accounting.printReports();
+// accounting.printEmployeeInformation();
 accounting.describe();
-//# sourceMappingURL=classes.js.map
+// const itCopy = { name: 'DUMMY', describe: it.describe };
+// 
+// itCopy.describe();

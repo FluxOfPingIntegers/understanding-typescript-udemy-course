@@ -24,4 +24,3 @@ let user1;
 user1 = new Person();
 user1.greet('Hi there, I am ');
 console.log(user1);
-//# sourceMappingURL=app.js.map

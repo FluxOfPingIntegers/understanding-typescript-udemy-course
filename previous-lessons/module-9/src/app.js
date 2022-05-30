@@ -5,6 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+// Project Type
 var ProjectStatus;
 (function (ProjectStatus) {
     ProjectStatus[ProjectStatus["Active"] = 0] = "Active";
@@ -83,6 +84,7 @@ function validate(validatableInput) {
     }
     return isValid;
 }
+// autobind decorator
 function autobind(_, _2, descriptor) {
     const originalMethod = descriptor.value;
     const adjDescriptor = {
@@ -94,6 +96,7 @@ function autobind(_, _2, descriptor) {
     };
     return adjDescriptor;
 }
+// Component Base Class
 class Component {
     constructor(templateId, hostElementId, insertAtStart, newElementId) {
         this.templateElement = document.getElementById(templateId);
@@ -109,6 +112,7 @@ class Component {
         this.hostElement.insertAdjacentElement(insertAtBeginning ? 'afterbegin' : 'beforeend', this.element);
     }
 }
+// ProjectItem Class
 class ProjectItem extends Component {
     constructor(hostId, project) {
         super('single-project', hostId, false, project.id);
@@ -144,6 +148,7 @@ class ProjectItem extends Component {
 __decorate([
     autobind
 ], ProjectItem.prototype, "dragStartHandler", null);
+// ProjectList Class
 class ProjectList extends Component {
     constructor(type) {
         super('project-list', 'app', false, `${type}-projects`);
@@ -205,6 +210,7 @@ __decorate([
 __decorate([
     autobind
 ], ProjectList.prototype, "dragLeaveHandler", null);
+// ProjectInput Class
 class ProjectInput extends Component {
     constructor() {
         super('project-input', 'app', true, 'user-input');
@@ -267,4 +273,3 @@ __decorate([
 const prjInput = new ProjectInput();
 const activePrjList = new ProjectList('active');
 const finishedPrjList = new ProjectList('finished');
-//# sourceMappingURL=app.js.map
